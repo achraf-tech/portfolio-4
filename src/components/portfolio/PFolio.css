@@ -1,0 +1,93 @@
+.tags {
+  height: 90px;
+
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 3px 2px;
+  margin-bottom: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tag {
+  outline: none;
+  border: none;
+  color: #eee;
+  margin: 0px 10px;
+  background-color: transparent;
+  cursor: pointer;
+  width: 120px;
+}
+.tag:hover {
+  color: gold;
+  font-weight: 900;
+  transition: all 1s;
+}
+.active {
+  font-weight: bold;
+  width: 120px;
+  height: 40px;
+  border-radius: 4px;
+  background: rgb(1, 134, 203);
+  left: 2%;
+  transform: translate() (-50%, -5%);
+  z-index: 20;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.PFcontainer {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  background: lime;
+}
+#big__section {
+  height: auto;
+  padding-bottom: 200px;
+}
+.image {
+  width: 98%;
+  height: 97%;
+  border-radius: 10px;
+  padding: 1%;
+  overflow: hidden;
+  object-fit: fill;
+  object-fit: cover;
+}
+
+.imageCard:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+@media only screen and (max-width: 1000px) {
+  .tags {
+    height: 249px;
+  }
+  .tagcont {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+  }
+  .tag {
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 10px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .PFcontainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.imageCard {
+  overflow: hidden;
+}
+.textp {
+  color: black;
+  text-decoration: none !important;
+  width: 100%;
+  overflow: hidden;
+}
